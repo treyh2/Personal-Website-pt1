@@ -37,7 +37,9 @@ nav{ /*Alters the style to the header of the page, by adjusting width, backgroun
   display: flex;
   justify-content: space-between;
 }
-
+h2{ /*Changes font size of h2*/
+  font-size: larger;
+}
 .me{ /*Changes the image size and location on the page*/
   width: 175px;
   display: flex;
@@ -48,7 +50,7 @@ main{ /*Make style changes inside of main*/
   padding: 85px 25px 5px;
   box-shadow: 0 0 12px -2px black;
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
