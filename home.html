@@ -3,42 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="java.js"></script>
+  <link rel="stylesheet" href="style.css"> <!--Reference the style.css to refer to this page-->
+  <script defer src="java.js"></script> <!--Reference the java.js file to refer to this page-->
   <title>Personal Website</title>
 </head>
 
 <body>
   <nav>
-    <div id="logo">
       <h1>Trey Holder</h1>
-    </div>
-    <div id="links">
-      <a class="active" href="#">Home</a>
+    <div id="links"> <!-- Navigation links for different sites on the page -->
+      <a class="active" href="#">Home</a> 
       <a href="about.html">About</a>
       <a href="portfolio.html">Portfolio</a>
     </div>
   </nav>
   <main>
-    <img src="" alt="">
-    <h2>Student, Bartender, & Soon to be developer!</h2>
+    <div class="me"> <!--Create class for picture to display at the top of the homepage-->
+    <img src="images/Me.jpg" alt="Me" height="175px" width="500px"> <!--Sources img and provides height and width of photo-->
+    </div>
+    <h2>Student, Bartender, & Soon to be developer!</h2> <!--Create header for my current employment/education-->
     <p>
-      I currently work at Pappadeaux Seafood Kitchen as a bartender and am also a student at The University of Texas at Dallas. 
+      I currently work at Pappadeaux Seafood Kitchen as a bartender and am also a student at The University of Texas at Dallas. <!--Create paragraph for me to describe myself-->
     </p>
-    <h3 class="quote">
+    <h3 class="quote"> <!--Input quote-->
       "If you're afraid to fail, then you're probably going to fail."  
       <br>
       - Kobe Bryant
     </h3>
   </main>
   <footer>
-    <a href="https://twitter.com/TreyHolderr" target="_blank">
+    <a href="https://twitter.com/TreyHolderr" target="_blank"> <!--This will create a hyperlink for the user to view different social media pages of mine. I reference the link, provide a class, and use target to send the user to a new page once clicking on the specified social media. -->
       <img class="media-link" src="images/x.jpg" alt="Twitter">
     </a>
-    <a href="https://github.com/treyh2" target="_blank">
+    <a href="https://github.com/treyh2" target="_blank"> <!--This will create a hyperlink for the user to view different social media pages of mine. I reference the link, provide a class, and use target to send the user to a new page once clicking on the specified social media. -->
       <img class="media-link" src="images/git.png" alt="Github" >
     </a>
-    <a href="https://www.instagram.com/trey.holderr/" target="_blank">
+    <a href="https://www.instagram.com/trey.holderr/" target=""> <!--This will create a hyperlink for the user to view different social media pages of mine. I reference the link, provide a class, and use target to send the user to a new page once clicking on the specified social media. -->
       <img class="media-link" src="images/insta.jpg" alt="Instagram">
     </a>
   </footer>

@@ -1,30 +1,30 @@
- *{
+ *{/*Provides a box sizing to the header*/
   box-sizing: border-box;
 }
 
-html{
-  background-color: darkgray;
-  font-size: 16px;
+html{ /*Sets the background color for the footer since it is not applicable to the headers or body since we attributed these*/
+  background-color: lightcoral;
   font-family: sans-serif;
 }
 
-body{
+body{ /*Allows changes to the body of the page*/
   background-color: rgb(192, 180, 180);
   box-shadow: 0 0 12px -2px black;
   padding: 0;
   max-width: 960px;
-  margin: 0 auto;
+  margin: auto; /*expands the body background color to fit the page*/
 }
 
-a{
+a{ /*Changes the font color, size, and margins inside the main header inside of nav*/
   color: black;
-  text-decoration: none;
-  font-size: x-large;
+  text-decoration: none; /*Allows user to see which page they are on by getting rid of the underlines on the other reference links*/
+  font-size: large;
   margin: 0 5px;
+  font-family: sans-serif;
 }
 
-nav{
-  box-shadow: 0 0 12px -2px black;
+nav{ /*Alters the style to the header of the page, by adjusting width, background color, alignment, etc.*/
+  box-shadow: 0 0 10px -2px black;
   position: fixed;
   left: 0;
   right: 0;
@@ -38,15 +38,21 @@ nav{
   justify-content: space-between;
 }
 
-main{
+.me{ /*Changes the image size and location on the page*/
+  width: 175px;
+  display: flex;
+  margin: auto;
+}
+main{ /*Make style changes inside of main*/
   min-height: 100vh;
-  padding: 85px 24px 96px;
+  padding: 85px 25px 5px;
   box-shadow: 0 0 12px -2px black;
   font-family: sans-serif;
   font-size: 25px;
+  text-align: center;
 }
 
-footer {
+footer { /*Make style changes in the footer of the page*/
   background-color: lightcoral;
   color: aliceblue;
   height: 70px;
@@ -57,76 +63,56 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  box-shadow: 0 0 12px -2px black;
+  box-shadow: 0 0 10px -2px black;
 }
 
-footer a{
-  margin: 0 25px;
-}
-footer .media-link{
+footer .media-link{ /*Changes the size of the images of the social media platforms in the footer*/
   height: 50px;
 }
-.active {
-  border-bottom: 1px solid black;
+.active { /*Changes the color of the underline dependent on what page you are on*/
+  border-bottom: 1px solid rgb(3, 3, 3);
 }
 
-main > img {
-  /*height: 500px;*/
-  width: 100px;
-  float: right;
-  margin: 10 px 0 10px 10px;
-}
 
-main .quote {
+main .quote { /*Changes the font size, style, centering, and margins of the quote inside of main*/
   font-family: sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 100;
   text-shadow: 1px 1px 2px gray;
   text-align: center;
-  margin-top: 4em;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
-section {
+section { /*Creates an underline/bottom border at the bottom of the section and also the size of the text inside the section*/
   border-bottom: 1px solid black;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.about-section:nth-of-type(2n) > img {
-  float: left;
-  margin: 0 24px 24px 24px;
-}
-
-.about-section:nth-of-type(2n + 1) > img {
+.about-section:nth-of-type(2n + 1) > img { /*Locates the image to the right of the page using float and also adjusts the margin of the image*/
   float: right;
   margin: 0 24px 24px 24px;
 }
 
-.about-section img{
-  height: 128px;
+.about-section img{ /*Changes the image size in the about section*/
+  height: 250px;
+  width: 50%;
 }
 
-#about-header {
+#about-header { /*Centers, changes font size, and weight of the header in about*/
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-.project {
-  width: calc(100% - 6em);
+.project { /*Changes the background, provides a shadow, and also marginalizes the class project*/
   background: white;
   box-shadow: 0 3px 6px -2px black;
   margin: 2em auto;
   padding: 1em;
 }
 
-.project:nth-of-type(2n) img {
-  width: 240px;
-  margin-right: 1em;
-  margin-bottom: 1em;
-  float: left;
-  box-shadow: 0 3px 6px -2px #ccc;
-}
-
-.project:nth-of-type(2n + 1) img {
+.project:nth-of-type(2n + 1) img { /*Changes image size, location, and margins for the the image inside of first project*/
   width: 240px;
   margin-left: 1em;
   margin-bottom: 1em;
@@ -134,61 +120,54 @@ section {
   box-shadow: 0 3px 6px -2px #ccc;
 }
 
-.project h2 {
+.project h2 { /*Provides changes to h2 inside of project*/
   font-weight: 500;
   font-size: 2em;
   margin: 0 0 1em;
   border-bottom: 2px solid #777777;
 }
 
-.project-content{
+.project-content{ /*Displays h2 in porfolio as an inline-block*/
   display: inline-block;
 }
-#project-header {
+#project-header { /*Changes the font size and allows me to put a border/underline under the h2*/
   font-weight: 100;
   font-size: 2rem;
   border-bottom: 1px solid #777777;
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 625px) { /*All alterations below will change the sizing/positioning based on screensize*/
   .project {
     width: 100%;
   }
 
-  .project-content {
+  .project-content { /*Displays the content in portfolio as flex and changes the layout to position it in columns*/
     display: flex;
     flex-direction: column;
   }
 
-  .project-content img {
+  .project-content img { /*Changes the positioning and centers the positioning of my first project under portfolios*/
     width: 100% !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
 
-  main {
+  main { /*Alters the text inside main for devices not on pc/mac */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-bottom: 4rem;
   }
 
-  main .quote {
+  main .quote { /*Changes the postioning of quote on homepage*/
     margin-top: 0;
   }
 
-  .about-section:nth-of-type(n) > img.about-img {
+  .about-section:nth-of-type(n) > img.about-img { /*Changes positioning and size of picture inside about page*/
     float: unset;
     margin: unset;
     width: 100%;
     height: unset;
-  }
-
-  footer a {
-    margin: 0;
-  }
-
-  #form {
-    margin: 0;
   }
 }
