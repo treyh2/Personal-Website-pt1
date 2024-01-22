@@ -40,9 +40,8 @@ nav{ /*Alters the style to the header of the page, by adjusting width, backgroun
 h2{ /*Changes font size of h2*/
   font-size: larger;
 }
-.me{ /*Changes the image size and location on the page*/
-  width: 175px;
-  display: flex;
+.me{ /*Changes margin on the home page*/
+  width: 200px;
   margin: auto;
 }
 main{ /*Make style changes inside of main*/
